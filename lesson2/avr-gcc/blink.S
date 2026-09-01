@@ -7,9 +7,9 @@
 #define dc3 R19
 
 .text
-.global reset
+.global main
 
-reset:
+main:
     ldi temp, hi8(RAMEND)
     out SPH, temp
     ldi temp, lo8(RAMEND)
@@ -24,9 +24,9 @@ reset:
     ldi temp, 0xFF
     out PORTA, temp
 
-main:
+loop:
     sbic PINA, 0
-    rjmp main
+    rjmp loop
     ldi temp, 0x01
     out PORTB, temp
     rcall delay
@@ -39,12 +39,12 @@ main:
     ldi temp, 0x00
     out PORTB, temp
     rcall delay
-    rjmp main
+    rjmp loop
 
 delay:
     ldi dc1, 255
     ldi dc2, 255
-    li dc3, 10
+    ldi dc3, 10
 sdelay:
     dec dc1
     brne sdelay
