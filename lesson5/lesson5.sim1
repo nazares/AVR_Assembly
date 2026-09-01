@@ -1,0 +1,39 @@
+<circuit version="1.1.0-SR2" rev="260714" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega16-1" mainComp="false" Show_id="true" Show_Val="false" Pos="16,-76" rotation="0" hflip="1" vflip="1" label="mega16-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="avr-gcc/adc.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="true" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Rail" CircId="Rail-6" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="0,-88" rotation="90" hflip="1" vflip="1" label="Rail-6" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-19" mainComp="false" Show_id="false" Show_Val="false" Pos="68,-144" rotation="0" hflip="1" vflip="1" label="Seven Segment-19" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="6" Vertical_Pins="false" CommonCathode="false" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="Connector" uid="Connector-69" startpinid="Rail-6-outnod" endpinid="mega16-1-RST" pointList="0,-72,0,-68,8,-68" />
+
+<item itemtype="Connector" uid="Connector-71" startpinid="Seven Segment-19-pin_commona" endpinid="mega16-1-PORTD7" pointList="76,-112,76,84,64,84" />
+
+<item itemtype="Connector" uid="Connector-72" startpinid="Seven Segment-19-pin_commonb" endpinid="mega16-1-PORTD6" pointList="108,-112,108,76,64,76" />
+
+<item itemtype="Connector" uid="Connector-73" startpinid="Seven Segment-19-pin_commonc" endpinid="mega16-1-PORTD5" pointList="140,-112,140,68,64,68" />
+
+<item itemtype="Connector" uid="Connector-74" startpinid="Seven Segment-19-pin_commond" endpinid="mega16-1-PORTD4" pointList="172,-112,172,60,64,60" />
+
+<item itemtype="Connector" uid="Connector-75" startpinid="Seven Segment-19-pin_commone" endpinid="mega16-1-PORTD3" pointList="204,-112,204,52,64,52" />
+
+<item itemtype="Connector" uid="Connector-76" startpinid="Seven Segment-19-pin_commonf" endpinid="mega16-1-PORTD2" pointList="236,-112,236,44,64,44" />
+
+<item itemtype="Connector" uid="Connector-78" startpinid="Seven Segment-19-pin_g" endpinid="mega16-1-PORTB1" pointList="44,-120,-16,-120,-16,36,8,36" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="Seven Segment-19-pin_f" endpinid="mega16-1-PORTB2" pointList="44,-128,-20,-128,-20,44,8,44" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="Seven Segment-19-pin_e" endpinid="mega16-1-PORTB3" pointList="44,-136,-24,-136,-24,52,8,52" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="Seven Segment-19-pin_d" endpinid="mega16-1-PORTB4" pointList="44,-144,-28,-144,-28,60,8,60" />
+
+<item itemtype="Connector" uid="Connector-87" startpinid="Seven Segment-19-pin_c" endpinid="mega16-1-PORTB5" pointList="44,-152,-32,-152,-32,68,8,68" />
+
+<item itemtype="Connector" uid="Connector-88" startpinid="Seven Segment-19-pin_b" endpinid="mega16-1-PORTB6" pointList="44,-160,-36,-160,-36,76,8,76" />
+
+<item itemtype="Connector" uid="Connector-89" startpinid="Seven Segment-19-pin_a" endpinid="mega16-1-PORTB7" pointList="44,-168,-40,-168,-40,84,8,84" />
+
+<item itemtype="Connector" uid="Connector-90" startpinid="Seven Segment-19-pin_dot" endpinid="mega16-1-PORTB0" pointList="60,-112,60,-104,-12,-104,-12,28,8,28" />
+
+</circuit>
