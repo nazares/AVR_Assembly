@@ -1,0 +1,81 @@
+<circuit version="1.1.0-SR2" rev="260714" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega16-1" mainComp="false" Show_id="true" Show_Val="false" Pos="8,-52" rotation="0" hflip="1" vflip="1" label="mega16-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="avra/pwm_servocontrol.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="true" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Rail" CircId="Rail-6" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-8,-76" rotation="90" hflip="1" vflip="1" label="Rail-6" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-21" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="-100,-12" rotation="-90" hflip="1" vflip="1" label="Potentiometer-21" idLabPos="-16,-40" labelrot="0" valLabPos="8.47331,-42.2527" valLabRot="90" Resistance="1 kΩ" Value_Ohm="622 Ω" Slider="true" Scale="1" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-22" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="-36,16" rotation="90" hflip="-1" vflip="1" label="Potentiometer-22" idLabPos="-16,-40" labelrot="0" valLabPos="24.5641,-7.7669" valLabRot="-90" Resistance="1 kΩ" Value_Ohm="467 Ω" Slider="true" Scale="1" />
+
+<item itemtype="Ground" CircId="Ground-25" mainComp="false" Show_id="false" Show_Val="false" Pos="88,136" rotation="0" hflip="1" vflip="1" label="Ground-25" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Servo" CircId="Servo-33" mainComp="false" Show_id="true" Show_Val="false" Pos="-116,92" rotation="0" hflip="-1" vflip="1" label="Servo-33" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _s/60º" MinPulse="1000 _µs" MaxPulse="2000 _µs" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" />
+
+<item itemtype="Servo" CircId="Servo-34" mainComp="false" Show_id="true" Show_Val="false" Pos="144,92" rotation="0" hflip="1" vflip="1" label="Servo-34" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _s/60º" MinPulse="1000 _µs" MaxPulse="2000 _µs" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" />
+
+<item itemtype="Ground" CircId="Ground-45" mainComp="false" Show_id="false" Show_Val="false" Pos="-36,136" rotation="0" hflip="1" vflip="1" label="Ground-45" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-35" mainComp="false" Pos="64,-36" />
+
+<item itemtype="Node" CircId="Node-36" mainComp="false" Pos="-8,-56" />
+
+<item itemtype="Node" CircId="Node-37" mainComp="false" Pos="64,-44" />
+
+<item itemtype="Node" CircId="Node-39" mainComp="false" Pos="-8,-44" />
+
+<item itemtype="Node" CircId="Node-41" mainComp="false" Pos="-36,-44" />
+
+<item itemtype="Node" CircId="Node-43" mainComp="false" Pos="-36,52" />
+
+<item itemtype="Node" CircId="Node-44" mainComp="false" Pos="-68,-44" />
+
+<item itemtype="Node" CircId="Node-46" mainComp="false" Pos="-36,92" />
+
+<item itemtype="Connector" uid="Connector-129" startpinid="Servo-34-in0" endpinid="Node-35-1" pointList="96,76,64,76,64,-36" />
+
+<item itemtype="Connector" uid="Connector-131" startpinid="Node-35-2" endpinid="mega16-1-PORTV1" pointList="64,-36,56,-36" />
+
+<item itemtype="Connector" uid="Connector-132" startpinid="Node-36-1" endpinid="Node-37-1" pointList="-8,-56,64,-56,64,-44" />
+
+<item itemtype="Connector" uid="Connector-133" startpinid="Rail-6-outnod" endpinid="Node-36-0" pointList="-8,-60,-8,-56" />
+
+<item itemtype="Connector" uid="Connector-135" startpinid="mega16-1-PORTV0" endpinid="Node-37-0" pointList="56,-44,64,-44" />
+
+<item itemtype="Connector" uid="Connector-136" startpinid="Node-37-2" endpinid="Node-35-0" pointList="64,-44,64,-36" />
+
+<item itemtype="Connector" uid="Connector-137" startpinid="Servo-34-in2" endpinid="mega16-1-PORTD7" pointList="96,108,56,108" />
+
+<item itemtype="Connector" uid="Connector-139" startpinid="Servo-34-in1" endpinid="Ground-25-Gnd" pointList="96,92,88,92,88,120" />
+
+<item itemtype="Connector" uid="Connector-149" startpinid="Servo-33-in2" endpinid="mega16-1-PORTB3" pointList="-68,108,-8,108,-8,76,0,76" />
+
+<item itemtype="Connector" uid="Connector-151" startpinid="Node-36-2" endpinid="Node-39-0" pointList="-8,-56,-8,-44" />
+
+<item itemtype="Connector" uid="Connector-152" startpinid="Node-39-2" endpinid="mega16-1-RST" pointList="-8,-44,0,-44" />
+
+<item itemtype="Connector" uid="Connector-153" startpinid="mega16-1-PORTA1" endpinid="Potentiometer-21-PinM" pointList="0,-12,-84,-12" />
+
+<item itemtype="Connector" uid="Connector-158" startpinid="Potentiometer-22-PinA" endpinid="Node-41-0" pointList="-36,0,-36,-44" />
+
+<item itemtype="Connector" uid="Connector-159" startpinid="Node-41-2" endpinid="Node-39-1" pointList="-36,-44,-8,-44" />
+
+<item itemtype="Connector" uid="Connector-164" startpinid="Potentiometer-21-PinA" endpinid="Node-43-1" pointList="-100,4,-100,52,-36,52" />
+
+<item itemtype="Connector" uid="Connector-165" startpinid="Potentiometer-22-PinB" endpinid="Node-43-0" pointList="-36,32,-36,52" />
+
+<item itemtype="Connector" uid="Connector-168" startpinid="Potentiometer-21-PinB" endpinid="Node-44-1" pointList="-100,-28,-100,-44,-68,-44" />
+
+<item itemtype="Connector" uid="Connector-169" startpinid="Servo-33-in0" endpinid="Node-44-0" pointList="-68,76,-68,-44" />
+
+<item itemtype="Connector" uid="Connector-170" startpinid="Node-44-2" endpinid="Node-41-1" pointList="-68,-44,-36,-44" />
+
+<item itemtype="Connector" uid="Connector-171" startpinid="Potentiometer-22-PinM" endpinid="mega16-1-PORTA0" pointList="-20,16,-12,16,-12,-20,0,-20" />
+
+<item itemtype="Connector" uid="Connector-172" startpinid="Node-46-1" endpinid="Ground-45-Gnd" pointList="-36,92,-36,120" />
+
+<item itemtype="Connector" uid="Connector-173" startpinid="Node-43-2" endpinid="Node-46-0" pointList="-36,52,-36,92" />
+
+<item itemtype="Connector" uid="Connector-174" startpinid="Node-46-2" endpinid="Servo-33-in1" pointList="-36,92,-68,92" />
+
+</circuit>
