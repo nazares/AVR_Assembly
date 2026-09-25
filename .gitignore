@@ -2,3 +2,4 @@
 **/*.obj
 **/*.elf
 **/*.lst
+.vscode
