@@ -6,7 +6,7 @@ OBJCOPY = avr-objcopy
 
 AFLAGS = -mmcu=$(MCU) -Os -Wall \
 -DF_CPU=$(F_CPU) \
--I/usr/lib/avr/incude
+-I/usr/lib/avr/include
 
 blink.elf: blink.S
 	$(CC) $(AFLAGS) -o $@ $<
