@@ -1,0 +1,25 @@
+<circuit version="1.1.0-SR2" rev="260714" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega16-1" mainComp="false" Show_id="true" Show_Val="false" Pos="76,-52" rotation="0" hflip="1" vflip="1" label="mega16-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="../lesson9/avr-gcc/usart.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="true" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Rail" CircId="Rail-6" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="60,-68" rotation="90" hflip="1" vflip="1" label="Rail-6" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Tunnel" CircId="Tunnel-58" mainComp="false" Show_id="false" Show_Val="false" Pos="64,108" rotation="0" hflip="1" vflip="1" label="Tunnel-58" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="SCK" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-59" mainComp="false" Show_id="false" Show_Val="false" Pos="40,100" rotation="0" hflip="1" vflip="1" label="Tunnel-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="MISO" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-60" mainComp="false" Show_id="false" Show_Val="false" Pos="64,92" rotation="0" hflip="1" vflip="1" label="Tunnel-60" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="MOSI" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-61" mainComp="false" Show_id="false" Show_Val="false" Pos="40,84" rotation="0" hflip="1" vflip="1" label="Tunnel-61" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="!SS" IsBus="false" />
+
+<item itemtype="Connector" uid="Connector-194" startpinid="Rail-6-outnod" endpinid="mega16-1-RST" pointList="60,-52,60,-44,68,-44" />
+
+<item itemtype="Connector" uid="Connector-207" startpinid="Tunnel-58-pin" endpinid="mega16-1-PORTB7" pointList="64,108,68,108" />
+
+<item itemtype="Connector" uid="Connector-208" startpinid="Tunnel-59-pin" endpinid="mega16-1-PORTB6" pointList="40,100,68,100" />
+
+<item itemtype="Connector" uid="Connector-209" startpinid="Tunnel-60-pin" endpinid="mega16-1-PORTB5" pointList="64,92,68,92" />
+
+<item itemtype="Connector" uid="Connector-210" startpinid="Tunnel-61-pin" endpinid="mega16-1-PORTB4" pointList="40,84,68,84" />
+
+</circuit>
