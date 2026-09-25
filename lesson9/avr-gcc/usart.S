@@ -11,8 +11,8 @@
 
 .section .text
 .global main
-.global __vector_11 // USART RX Complete Handler
-.global __vector_13 // USART TX Complete Handler
+.global __vector_11 ; USART RX Complete Handler
+.global __vector_13 ; USART TX Complete Handler
 
 main:
     ldi temp, hi8(RAMEND)
