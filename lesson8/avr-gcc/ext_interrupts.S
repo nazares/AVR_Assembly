@@ -7,7 +7,7 @@
 .section .text
 
 .global main
-.global __vector_1 // IRQ0 Handler
+.global __vector_1 ; IRQ0 Handler
 
 main:
     ldi temp, hi8(RAMEND)
